@@ -35,15 +35,17 @@ def getstats():
         happtable = soup.find("table", attrs={"class": "mobStatsBox"})
         happtable_data = happtable.findAll("tr")
         # open a CSV file with append, so old data will not be erased
-        with open('step3.csv', 'a') as mobstats:
-            for mobStats in happtable_data:
-                res = mobStats.find('td')                                             
-                if res:
-                    global mobInfo
-                    mobInfo = res.text.strip()
-                    #print(mobInfo)
-                    csvstats = csv.writer(mobstats)
-                    csvstats.writerow([wikititle, mobInfo, scrapeurl])
+
+        statrow = []
+        for mobStats in happtable_data:                                                      
+            res = mobStats.find('td')                                             
+            if res:                                                              
+                mobInfo = res.text.strip()
+                statrow.append(mobInfo)
+                
+        with open('step3.csv', 'a+') as statsfile:
+            csvstats = csv.writer(statsfile)
+            csvstats.writerow([wikititle, statrow, scrapeurl])
 
         if uindex == maxurlnum:
             break

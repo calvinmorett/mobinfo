@@ -31,7 +31,7 @@ def pl(scrape_url):
         # print(len(mwpage))
         with open('step1.txt', 'a+') as pagelinks:
             pagelinks.write(str(next_page)+'\n')
-        if 'Zordakalicus' in relative:
+        if 'pagefrom=Zordakalicus' in relative:
             pagelinks.write(str(next_page)+'\n')
             print('Zor hit, ending function loop')
             breakloop = True

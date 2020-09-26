@@ -31,7 +31,7 @@ def getlinks():
         mw = soup.find("div", {"id": "mw-pages"})
         connie = mw.findAll('a')
 
-        with open('step2.txt', 'a') as npclinks:
+        with open('step2.txt', 'a+') as npclinks:
             for link in connie:
                 if link.has_attr('href'):
                     relative = link['href']
