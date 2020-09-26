@@ -1,4 +1,4 @@
-![npclinks](npclinks.png "npclinks")
+![npclinks](/img/npclinks.png "npclinks")
 mob information for p99, from the wiki.
 
-![inprogress web scrape](mobinfo.gif "Web Scraping each link")
+![inprogress web scrape](/img/mobinfo.gif "Web Scraping each link")
