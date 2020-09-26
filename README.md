@@ -1,6 +1,6 @@
 ![npclinks](/img/npclinks.png "npclinks")
 
-Mobinfo is just mob information for p99, webscrapped from the project1999 wiki.
+Mobinfo is just mob information for Everquest, webscrapped from the project1999 wiki.
 
 Steps:
 
