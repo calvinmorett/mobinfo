@@ -16,5 +16,6 @@ Libraries used:
 - requests
 - csv
 - datetime
+- re
 
 ![inprogress web scrape](/img/mobinfo.gif "Web Scraping each link")
