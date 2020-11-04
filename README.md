@@ -1,6 +1,6 @@
 ![npclinks](/img/npclinks.png "npclinks")
 
-![](/calvinmorett/img/skull_ff.gif)
+![](https://github.com/calvinmorett/img/blob/main/skull_crop.gif)
 
 Mobinfo is just mob information for Everquest, webscrapped from the project1999 wiki.
 
